@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en" xlmns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="img/psa-icon.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Home - PSA PortNet&reg;</title>
+    <meta content='width=device-width, initial-scale=.0, shrink-to-fit=no' name='viewport' />
+    <!--     Fonts and icons     -->
+    <!-- CSS Files -->
+    <link th:href="@{/css/error.css}" rel="stylesheet" />
+  </head>
+<body class="bg-purple">    
+    <script th:src="@{/js/error.js}"></script>
+    <div class="not-found parallax">
+        <div class="sky-bg"></div>
+        <div class="wave-7"></div>
+        <div class="wave-6"></div>
+        <a class="wave-island" th:href="@{/}">
+                <img src="http://res.cloudinary.com/andrewhani/image/upload/v1524501929/404/island.svg" alt="Island">
+            </a>
+        <div class="wave-5"></div>
+        <div class="wave-lost wrp">
+            <span th:text="${first}">5</span>
+            <span th:text="${second}">0</span>
+            <span th:text="${third}">0</span>
+        </div>
+        <div class="wave-4"></div>
+        <div class="wave-boat">
+            <img class="boat" src="http://res.cloudinary.com/andrewhani/image/upload/v1524501894/404/boat.svg" alt="Boat">
+        </div>
+        <div class="wave-3"></div>
+        <div class="wave-2"></div>
+        <div class="wave-1"></div>
+        <div class="wave-message">
+            <p>Lost at sea?</p>
+            <p>Click on the island to return to safe waters!</p>
+        </div>
+    </div>
+
+</body>
+</html>
